@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 2rem;
+    color: #1f2937;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  form, table, #logon-register, #products, #edit-product {
+    max-width: 85%;
+    margin: 1rem auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.25rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  #add-product,
+  .editButton {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  .deleteButton {
+    background-color: #ef4444;
+    color: white;
+  }
+
+  #logoff,
+  #register-button,
+  #logon-button {
+    background-color: #10b981;
+    color: white;
+  }
+
+  #register-cancel,
+  #logon-cancel,
+  #edit-cancel {
+    background-color: #9ca3af;
+    color: white;
+  }
+
+  #adding-product {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  #message,
+  #products-message {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  th {
+    background-color: #f3f4f6;
+  }
+
+  tr:hover {
+    background-color: #f9fafb;
+  }
+
+  .buttons-center {
+    text-align: center;
+  }
+
+  .minimum {
+    color: #9b0909;
+  }
+
+  .filter-group {
+    margin: 0 30% 0 30%;
+    margin-bottom: 1rem;
+  }
+
+  #logoff {
+    float: right;
+  }
+
+  #logon-register {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+  }
+
+  #logon-div {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+  }
+
+  #register-div {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+  }
+
+  #message {
+    margin-top: 1%;
+    color: #9b0909;
+    font-weight: 200;
+  }
