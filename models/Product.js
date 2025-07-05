@@ -10,8 +10,8 @@ const ProductSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      required: [true, 'Please provide category'],
-      maxlength: 100,
+      enum: ['black tea', 'green tea', 'oolong tea', 'white tea', 'herbal tea', 'specialty tea'],
+      default: 'black',
     },
     price: {
       type: Number,
@@ -20,6 +20,10 @@ const ProductSchema = new mongoose.Schema(
     quantity: {
         type: Number,
         default: 0,
+      },
+      minimum: {
+        type: Number,
+        default: 1,
       },
     createdBy: {
       type: mongoose.Types.ObjectId,

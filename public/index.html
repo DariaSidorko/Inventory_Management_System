@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Products List</title>
+  </head>
+
+  <body>
+    <h1>Inventory Management System</h1>
+    <p id="message"></p>
+    <div id="logon-register" style="display:none;">
+      <button type="button" id="logon">logon</button>
+      <button type="button" id="register">register</button>
+    </div>
+    <div id="logon-div" style="display:none;">
+      <form>
+        <div>
+          <label for="email">email:</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="password">password:</label>
+          <input type="password" id="password" />
+        </div>
+        <button type="button" id="logon-button">logon</button>
+        <button type="button" id="logon-cancel">cancel</button>
+      </form>
+    </div>
+    <div id="register-div" style="display:none;">
+      <form>
+        <div>
+          <label for="name">name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="email1">email:</label>
+          <input type="email" id="email1" />
+        </div>
+        <div>
+          <label for="password1">password:</label>
+          <input type="password" id="password1" />
+        </div>
+        <div>
+          <label for="password2">verify password:</label>
+          <input type="password" id="password2" />
+        </div>
+        <button type="button" id="register-button">register</button>
+        <button type="button" id="register-cancel">cancel</button>
+      </form>
+    </div>
+    <div id="products" style="display:none;">
+      <button type="button" id="logoff">logoff</button>
+      <p id="products-message"></p>
+      <h2>Products List</h2>
+      <div class="filter-group">
+        <label for="category-filter">Filter by category:</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          <option value="black tea">Black Tea</option>
+          <option value="green tea">Green Tea</option>
+          <option value="oolong tea">Oolong Tea</option>
+          <option value="white tea">White Tea</option>
+          <option value="herbal tea">Herbal Tea</option>
+          <option value="specialty tea">Specialty Tea</option>
+        </select>
+      </div>
+      <table id="products-table">
+        <tr id="products-table-header">
+          <th>name</th>
+          <th>category</th>
+          <th>price</th>
+          <th>quantity</th>
+          <th>minimum</th>
+          <th></th>
+          <th></th>
+          <th colspan="2"></th>
+        </tr>
+      </table>
+      <div class="buttons-center">
+        <button type="button" id="add-product">add new product</button>
+      </div>
+    </div>
+    <div id="edit-product" style="display:none;">
+      <form>
+        <div>
+          <label for="name">name:</label>
+          <input type="text" id="product-name" />
+        </div>
+        <div>
+          <label for="category">category:</label>
+          <select id="category">
+            <option value="black tea">black tea</option>
+            <option value="green tea">green tea</option>
+            <option value="oolong tea">oolong tea</option>
+            <option value="white tea">white tea</option>
+            <option value="herbal tea">herbal tea</option>
+            <option value="specialty tea">specialty tea</option>
+          </select>
+        </div>
+        <div>
+          <label for="price">price:</label>
+          <input type="text" id="price" />
+        </div>
+        <div>
+          <label for="quantity">quantity:</label>
+          <input type="text" id="quantity" />
+        </div>
+        <div>
+          <label for="minimum">minimum:</label>
+          <input type="text" id="minimum" />
+        </div>
+        <div class="buttons-center">
+          <button type="button" id="adding-product">add</button>
+          <button type="button" id="edit-cancel">cancel</button>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
