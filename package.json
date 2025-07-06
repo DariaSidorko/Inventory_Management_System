@@ -20,6 +20,8 @@
     "mongoose": "^8.16.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "@faker-js/faker": "^9.9.0",
+    "nodemon": "^3.1.10",
+    "rosie": "^2.1.1"
   }
 }
